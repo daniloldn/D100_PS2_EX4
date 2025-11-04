@@ -7,7 +7,7 @@ def load_csv(data_path: Path) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    # TODO: fix this data path using the pathlib library
-    data_path = "/Users/adrianochs/all_my_great_data/game.csv"
-    df = load_csv(data_path)
-    print(data_path)
+    # TODO: fix this data path using the pathlib library    
+    path = Path(__file__).parent/"data"/"game.csv"
+    df = load_csv(path)
+    print(path)
